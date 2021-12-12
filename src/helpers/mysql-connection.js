@@ -5,11 +5,11 @@ dotenv.config({ path: path.join(__dirname, '../../.env') });
 
 const mysqlConnection = () => {
   const mySqlSequelize = new sequelize(
-    process.env.DATABASE_URL,
+    'nmcnpm',
     process.env.DATABASE_USERNAME,
     process.env.DATABASE_PASSWORD,
     {
-      host: '18.136.194.238',
+      host: process.env.DATABASE_URL,
       dialect: 'mysql',
     }
   );
