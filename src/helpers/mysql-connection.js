@@ -5,7 +5,7 @@ dotenv.config({ path: path.join(__dirname, '../../.env') });
 
 const mysqlConnection = () => {
   const mySqlSequelize = new sequelize(
-    'nmcnpm',
+    'NMCNPM',
     process.env.DATABASE_USERNAME,
     process.env.DATABASE_PASSWORD,
     {
